@@ -43,7 +43,444 @@
      <!-- Add favicon -->
      <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+<style>
+	body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      background-color: rebeccapurple;
+  
+      opacity:5;
+      display:flex;
+            height:360000px;
+    }
+    .asa{
+      background-color: blueviolet;
+      width:1300px;
+      height:80px;
+    }
 
+    /* Drawer button */
+    .drawer-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 120px;
+      height: 120px;
+      background-color:white;
+      color: red;
+        color: blue;
+      color:black;
+      border: none;
+      border-radius: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .drawer-btn span {
+      font-size: 30px;
+      line-height:1 ;
+    }
+
+    /* Drawer container */
+    .drawer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color:#000000;
+      color: white;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+      overflow-y: auto;
+      padding: 20px;
+      z-index: 999;
+      border:3px solid red;
+      overdflow:hidden;
+    }
+
+    .drawer.open {
+      transform: translateX(0);
+    }
+
+    /* Drawer content */
+    .drawer h2 {
+      margin-top: 8;
+      color: #00ffff;
+    }
+
+    .drawer a {
+      text-decoration: none;
+      color: white;
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 60px;
+      transition: background-color 0.3s ease;
+    }
+
+    .drawer a:hover {
+      background-color: #444;
+    }
+
+    /* Overlay */
+    .overlay {
+      position: fixed;
+      top: ;
+      left: 100px;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      z-index: 998;
+    }
+
+    .facebook.active {
+      display: block;
+    }
+ 
+  #demo{
+    position:relative;
+    
+    color:#00ff00;
+  }
+  #mom{
+    color:#00ff00;
+  }
+  #sit{
+    color:#00ff00;
+  }
+  #test{
+    color:#00ff00;
+  }
+  #test1{
+    color:#00ff00;
+  }
+  #test2{
+    color:#00ff00;
+  }
+  #test3{
+    color:#00ff00;
+  }
+  #test4{
+    color:#00ff00;
+  }
+  #test5{
+    color:#00ff00;
+  }
+  .hello{
+    color:#00ff00;
+  }
+       .button{
+    background-color:blue;
+    display:flex;
+    over-flow:hidden;
+    border:3px solid #ff00ff;
+  }
+  button:hover{
+    background:linear-gradient(360deg,#000000,#ffff00);
+    inset:5;
+  }
+  #test6{
+    color:#00ff00;
+  }
+  #about5{
+    color:#00ff00;
+  }
+        iumg{
+            position:relative;
+            width:100%; 
+            height:400px;
+            top:60px;
+            border-radius:10px;
+            margin-left:px;
+            margin-top:80px;
+          
+        }
+        .insi{
+            color:dodgerblue;
+            text-align:center;
+            width:300px;
+            height:300px;
+            background-color:blue;
+            margin-left:220px;
+            padding-top:20px;
+            border-radius:20px;
+            border:3px solid red;
+        }
+        .in{
+            width:400px;
+            height:500px;
+            background-color:whitesmoke;
+            place-content:center;
+    justify-content:center;
+           place-item:center;
+            text-align:center;
+            left:200px;
+            position:absolute;
+        }
+        submit{
+            background-color:green;
+        }
+        body {
+      background: #fff;
+      color: #222;
+      transition: background 0.3s, color 0.3s;
+    }
+    .dark-mode {
+      background: #222;
+      color: #fff;
+    }
+    #darkModeToggle {
+      margin-bottom:10px;
+      padding: 3px 10px;
+      cursor: pointer;
+    }
+        ody{
+      font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.dropdown {
+    position:relative ;
+    display: inline-block;
+    padding-left:300px ;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 200px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding-right:300px ;
+    z-index:1 ;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 306px 100px ;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.selected-fruit {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.appl{
+    font-size:50px;
+   display:flex;
+    width:30px;
+    
+}  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ----- VARIABLES ----- */
+:root{
+    --body-color: #faf7f8;
+    --color-white: #925ff;
+
+    --text-color-second: rgb(68, 68, 68);
+    --text-color-third: rgb(30, 159, 171);
+
+    --first-color: rgb(110, 87, 224);
+    --first-color-hover: rgb(40, 91, 212);
+
+    --second-color: rgb(110, 87, 224);
+    --third-color: rgb(192, 166, 49);
+    --first-shadow-color: rgba(0, 0, 0, 0.1);
+
+}
+  body{
+    background: var(--body-color);
+    
+    display:inline-block;
+}
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ .project-container{
+    display: flex;
+    width: 102%;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    left-margin:60px;
+}
+/*color for 3 boxes*/
+.project-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 550px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    overflow: hidden;
+       left-margin:60px;
+
+}
+.project-box:hover{
+  background-color: #6262aa;
+  transition: 1.5s;
+}
+.project-box>i{
+    font-size: 50px;
+    color: #00B5E7;
+    margin-bottom: 25px;
+}
+.project-box label{
+    font-size: 15px;
+    color: #777;
+}
+.project-box::after, .contact-info::after{
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    background: var(--second-color);
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    z-index: 1;
+}
+.uv{
+  min-height: 700px;
+  z-index: 100px;
+  font-weight: 700px;
+  margin-top: 2em;
+  font-size: 6em;
+  text-align: center;
+}
+                .row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+  place-items:center;
+    justify-content:center;
+}
+  .col{
+    display: flex;
+    width: 50%;
+}
+
+/* -- ## --- RESUABLE CSS -- ## -- */
+.top-header{
+    text-align: center;
+    margin-bottom: 5em;
+}
+.top-header h1{
+    font-weight: 600;
+    color: var(--text-color-second);
+    margin-bottom: 10px;
+}
+.top-header span{
+    color: #999;
+}
+hd{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color-second);
+    margin-bottom: 15px;
+}
+
+/* ----- ABOUT INFO ----- */
+.about-info{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 30px 70px;
+    padding-inline: 20px;
+    width: 100%;
+    background: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 20px;
+}
+.about-info:hover{
+  background: linear-gradient( #f869d5, #5650de);
+  transition: 9s;
+}
+img{
+  width: 600px;
+  height: 900px;
+  border-radius: 30px;
+}
+{
+    
+    display:flex;
+    gap:28px;
+    flex-wrap:wrap;
+    
+  }
+  #po{
+    text-align:center;
+    font-size: 40px;
+    
+  }
+  .box1{
+    display: inline-block;
+    color:#00ff00;
+    background-color:#000;
+    width:400px;
+    height:500px;
+    margin-bottom: 15px;
+    padding-top:180px;
+    border-radius:20px;
+    margin-left: 1pc;
+    box-shadow: 0 0 15px #ff00ff,0 15px 15px #ff00ff;
+  }
+  .box1:hover{
+    background: linear-gradient(#00ff00, #ff00ff);
+  }
+  .box::after{
+    background: linear-gradient(#00ff00, #ff00ff);
+    z-index: 2;
+	}
+</style>
 </head>
 <body>
     <div class="asa">
@@ -295,6 +732,54 @@
         <div style="margin-top: 300px;" class="box1" id="po" name="k">Ratting PlayStore<br>6,000</div
           <div style="margin-top: 300px;" class="box1" id="po" name="k">Ratting PlayStore<br>6,000</div
                 </nav>
-	<script type="text/javascript" src="game.js"></script>
+	  <script>
+		function myFunction(){
+document.getElementById("demo").innerHTMl=("hwlljhffgggddhjsjdhsjdgfhfhdudhdufhdgdodhfydhryjggg");
+  }
+    function myFunction (){
+    document.getElementById("demo").innerHTML=("<p>Nmap</p>Metasploit<p>Airclack-Ng</p>Wireshark<p></p>open VAS<p>SQLmap</p>NetStumber<p>EttetCap</p><p>maltego</p><p>nikto</p><p>Burp suit</p><p>John The Ripper</p><p>Angry Ip Scanner</p><p>Acunetix</p><p>Invicti(formerly NetSpark)</p><p>intruder</p><p>Remcos conclusion</p>");
+  }
+      function myFuncti(){
+      document.getElementById("mom").innerHTML=("<d2>HACKING TOOLS</d2><p>hacking</p>");
+    }
+  function myFunctio (){
+    document.getElementById("sit").innerHTML=("<p>UNLIMITED SSH</p><p>did.ecitizen.go.ke</p><header>CAPPED HOST</header><p>ncpwd.fuzu.com</p><p>betika.com</p><p>coregateway.app.dlight.com <header>AIRTEL</header><p>viton.com</p><p>104.18.8.127</p></p>");
+  }
+  function kenya1(){
+      document.getElementById("test1").innerHTML=("<p>Test Management Tools</p><p>Cross Browser Testing Tools</p><p>Best ETL Testing Tools</p><p>Mobile Testing Tools</p><p>Regression Testing Tools</p><p>Defect Tracking Tools</p><p>GUI Testing Tools</p><p>Requirements Management Tools</p>");
+    }
+    function kenya2(){
+      document.getElementById("test2").innerHTML=("<p>Identity card 30 USDT per Id</p><p>visa card</p>");
+    }
+        function kenya3(){
+      document.getElementById("test3").innerHTML=("<p>NORD VPN</p>");
+    }
+    function kenya4(){
+      document.getElementById("test4").innerHTML=("TFT TOOLS <P>MdmFix tools</P><p>Pandora</p><p>XTM ADB Tool v1.2 </p><p>MRT Tool V6.0  With 1 Year Free</p><p>XTM ADB TOOL V1.1  www.firmwarebd.com </p><p> FRP MTK </p><p>XTM MRT 3.95</p>");
+    }
+    function kenya5(){
+      document.getElementById("test5").innerHTML=("<p>CHAT ZONE</p>");
+    }
+    const toggleButton = document.getElementById('darkModeToggle');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+    function enya6() {
+      document.getElementById("tst6").innerHTML=("hello their");
+    }
+    function kenya6() {
+      document.getElementById("test6").innerHTML=("ghhhvvvh");
+    }
+    function toggleDrawer() {
+      const drawer = document.getElementById('drawer');
+      const facebook = document.getElementById('facebook');
+      drawer.classList.toggle('open');
+      facebook.classList.toggle('active');
+    }
+        function selectServer(fruit) {
+    document.getElementById("selectedServer").innerText = "" + fruit;
+}
+		  
+	  </script>
 </body>
 </html>
