@@ -42,9 +42,8 @@
      <link rel="stylesheet" href="./style.css">
      <!-- Add favicon -->
      <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-<style>
-	body {
+    <style>
+      body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
@@ -479,8 +478,8 @@ img{
   .box::after{
     background: linear-gradient(#00ff00, #ff00ff);
     z-index: 2;
-	}
-</style>
+  }
+    </style>
 </head>
 <body>
     <div class="asa">
@@ -702,84 +701,4 @@ img{
                             <p> <img src="/IMG_20250603_205659.png">
                             </p>
                             <div class="about-btn">
-                                <button class="btn">Download file <i class="uil uil-import"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </main>
-  </div>
-  <p style="margin-top: 19em;"></p>
-    <main class="wrapper">
-  <section class="section" id="about">
-                <div class="top-header">
-                    <h1 style="font-size: 40px;">Our logo</h1>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="about-info">
-                            <hd>My Profile</hd>
-                            <p> <img src="/IMG_20250603_173027.png">
-                            </p>
-                            <div class="about-btn">
-                                <button class="btn">Download LOGO <i class="uil uil-import"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </main>
-  </div>
-    <div style=" class="box1" id="po" name="k">Ratting PlayStore<br>6,000</div>
-      <div style="margin-top: 300px;" class="box1" id="po" name="k">Ratting PlayStore<br>6,000</div
-        <div style="margin-top: 300px;" class="box1" id="po" name="k">Ratting PlayStore<br>6,000</div
-          <div style="margin-top: 300px;" class="box1" id="po" name="k">Ratting PlayStore<br>6,000</div
-                </nav>
-	  <script>
-		function myFunction(){
-document.getElementById("demo").innerHTMl=("hwlljhffgggddhjsjdhsjdgfhfhdudhdufhdgdodhfydhryjggg");
-  }
-    function myFunction (){
-    document.getElementById("demo").innerHTML=("<p>Nmap</p>Metasploit<p>Airclack-Ng</p>Wireshark<p></p>open VAS<p>SQLmap</p>NetStumber<p>EttetCap</p><p>maltego</p><p>nikto</p><p>Burp suit</p><p>John The Ripper</p><p>Angry Ip Scanner</p><p>Acunetix</p><p>Invicti(formerly NetSpark)</p><p>intruder</p><p>Remcos conclusion</p>");
-  }
-      function myFuncti(){
-      document.getElementById("mom").innerHTML=("<d2>HACKING TOOLS</d2><p>hacking</p>");
-    }
-  function myFunctio (){
-    document.getElementById("sit").innerHTML=("<p>UNLIMITED SSH</p><p>did.ecitizen.go.ke</p><header>CAPPED HOST</header><p>ncpwd.fuzu.com</p><p>betika.com</p><p>coregateway.app.dlight.com <header>AIRTEL</header><p>viton.com</p><p>104.18.8.127</p></p>");
-  }
-  function kenya1(){
-      document.getElementById("test1").innerHTML=("<p>Test Management Tools</p><p>Cross Browser Testing Tools</p><p>Best ETL Testing Tools</p><p>Mobile Testing Tools</p><p>Regression Testing Tools</p><p>Defect Tracking Tools</p><p>GUI Testing Tools</p><p>Requirements Management Tools</p>");
-    }
-    function kenya2(){
-      document.getElementById("test2").innerHTML=("<p>Identity card 30 USDT per Id</p><p>visa card</p>");
-    }
-        function kenya3(){
-      document.getElementById("test3").innerHTML=("<p>NORD VPN</p>");
-    }
-    function kenya4(){
-      document.getElementById("test4").innerHTML=("TFT TOOLS <P>MdmFix tools</P><p>Pandora</p><p>XTM ADB Tool v1.2 </p><p>MRT Tool V6.0  With 1 Year Free</p><p>XTM ADB TOOL V1.1  www.firmwarebd.com </p><p> FRP MTK </p><p>XTM MRT 3.95</p>");
-    }
-    function kenya5(){
-      document.getElementById("test5").innerHTML=("<p>CHAT ZONE</p>");
-    }
-    const toggleButton = document.getElementById('darkModeToggle');
-    toggleButton.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-    });
-    function enya6() {
-      document.getElementById("tst6").innerHTML=("hello their");
-    }
-    function kenya6() {
-      document.getElementById("test6").innerHTML=("ghhhvvvh");
-    }
-    function toggleDrawer() {
-      const drawer = document.getElementById('drawer');
-      const facebook = document.getElementById('facebook');
-      drawer.classList.toggle('open');
-      facebook.classList.toggle('active');
-    }
-        function selectServer(fruit) {
-    document.getElementById("selectedServer").innerText = "" + fruit;
-}
-		  
-	  </script>
-</body>
-</html>
+                                <button class="btn">Download file <i 
