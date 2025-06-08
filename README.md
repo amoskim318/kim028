@@ -1101,7 +1101,7 @@ img:hover{
         </footer>
 
     </div>
-<img src="/Picsart_25-05-27_19-12-06-936.jpg">
+<img src="Picsart_25-05-27_19-12-06-936.jpg">
 
 
 
